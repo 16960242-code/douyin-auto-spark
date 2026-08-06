@@ -106,8 +106,6 @@ Settings -> Secrets and variables -> Actions -> New repository secret
 
 配置 `MAIL_ADDRESS`、`MAIL_USERNAME` 和 `MAIL_PASSWORD` 后，续火失败会向 `MAIL_ADDRESS` 发送提醒邮件，并附带失败图片。
 
-如果配置的会话有一个没找到（通常是好友改了昵称），脚本会先把其余好友的消息发完，再以失败状态结束并告警，因此不会出现「任务显示成功但火花已经断了」的情况。
-
 #### 3️⃣ 手动运行一次
 
 ```text
@@ -117,6 +115,10 @@ Actions -> 点击绿色的 I understand my workflows, go ahead and enable them -
 点击 `Run workflow` 后等待任务完成。手机打开抖音，你就可以发现你发了一条嘉豪语录给朋友了
 
 ![run-workflow](assets/readme/run-workflow.jpg)
+
+#### 4️⃣ 每天自动运行
+
+如果手动运行一次没报错，那么默认情况下，每天北京时间 0 点会自动续一次火（不需要配置任何其他东西），但是由于 github 会延迟，大概最多凌晨 3 点之前会自动续一次火
 
 ### 💻 本地运行
 
