@@ -26,7 +26,7 @@ jobs:
           bun-version: latest
 
       - name: 安装运行时依赖 (Install dependencies)
-        run: bun install --production
+        run: bun install --production --ignore-scripts
 
       - name: 续一次火 (Run spark job)
         env:
