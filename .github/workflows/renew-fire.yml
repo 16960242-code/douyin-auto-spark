@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "0 0 * * *"
       timezone: "Asia/Shanghai"
+    - cron: "0 8 * * *"
+      timezone: "Asia/Shanghai"
+    - cron: "0 16 * * *"
+      timezone: "Asia/Shanghai"
 
 jobs:
   run:
